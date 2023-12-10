@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400;500&family=Teko:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="weather">
+      <div class="header">
+          CF
+      </div>
+      <div class="wel">
+          <h1>Welcome To Climate forecast</h1>
+          <br>
+          <h1>Find Your City Weather</h1>
+          <input type="text" class="search" placeholder="Enter your city name">
+          <button class="btn"> <a href="#data">Search</a></button>
+          <h3 class="scroll"> <a href="#data">Scroll Down ↓</a></h3>
+      </div>
+
+  </div>
+
+
+  <div class="data" id = "data">
+      <div class="loc">
+          Location
+      </div>
+      <div class="second">
+          <div class="temp section">
+              <div class="heading heading1">
+                  Temperature
+              </div>
+              <div class="t value">
+
+              </div>
+          </div>
+          <div class="wind section">
+              <div class="heading heading2">
+                  Wind Speed
+              </div>
+              <div class="s value">
+                  
+              </div>
+          </div>
+
+          <div class="deg section">
+              <div class="heading heading3">
+                  Wind Degree
+              </div>
+              <div class="d value">
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="about">
+      This weather forecast website simply works on open Weather API which provides temp, wind speed & weather. Made by Priyam Kumar
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

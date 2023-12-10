@@ -1,0 +1,243 @@
+/* Write your desired css here */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar{
+    background-color: grey;
+    width: 0.5vw;
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: rgb(143, 192, 192);
+    border-radius: 50px;
+}
+
+*::-webkit-scrollbar:hover{
+    background-color: grey;
+    width: 0.7vw;
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+    background-color: aqua;
+}
+
+
+.weather {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: aqua;
+    background-image: url('assests/img/maap.png');
+    object-fit: contain;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.wel {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wel h1{
+    font-size: 8vh;
+    font-weight: 400;
+}
+
+.header {
+    width: 100vw;
+    height: 15%;
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+    border-bottom: 0.2rem solid rgba(0, 216, 245);
+    background-color: rgba(0, 216, 245);
+}
+
+button {
+    width: 30%;
+    height: 6%;
+    border-radius: 2rem;
+    font-size: 2rem;
+    background-color: rgb(0, 216, 245);
+    overflow: hidden;
+}
+
+.search {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+    height: 8%;
+    font-size: 3rem;
+    padding-left: 1rem;
+    color: rgb(0, 216, 245);
+    background-color: black;
+    border: 0.2rem solid rgb(0, 216, 245);
+    border-radius: 2rem;
+}
+
+.data{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loc{
+    background-color: darkorange;
+    width: 90vw;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border-radius: 2rem;
+}
+
+.second{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.heading{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-bottom: 3px solid black;
+}
+
+.section{
+    width: 25%;
+    height: 90%;
+    border-radius: 2rem;
+}
+
+.temp{
+    background-color: rgb(226, 94, 94);
+}
+
+.deg{
+    background-color: rgb(135, 210, 135);
+}
+
+.wind{
+    background-color: pink;
+}
+
+.heading1{
+    background-color: rgb(197, 38, 38);
+}
+
+.heading3{
+    background-color: green;
+}
+
+.heading2{
+    background-color: rgb(226, 67, 94);
+}
+
+.value{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 210px;
+}
+
+.temp, .wind, .deg{
+    font-size: 100px;
+}
+
+
+/* 3rd Page */
+.about {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    animation: font 3s ease-in 1s alternate;
+    font-size: 2rem;
+    color: pink;
+    transition: all 0.3s ease; 
+}
+
+
+@media (max-width: 1150px) {
+    .section{
+        width: 30%;
+        height: 75%;
+    }
+}
+
+@media (max-width: 710px) {
+    .data{
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 610px) {
+    .wel h1{
+        font-size: 50px;
+    }
+    .search{
+        height: 5%;
+        font-size: 1.5rem;
+    }
+    .about{
+        font-size: 1rem;
+        color: brown;
+    }
+}
+
+@media (max-width: 900px) {
+    .btn{
+        width: 25%;
+        height: 5%;
+        border-radius: 1.5rem;
+        font-size: 1.7rem;
+    }
+    .search{
+        height: 6%;
+        font-size: 1.5rem;
+    }
+}
+
+.wel h3{
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    scroll-behavior: smooth;
+}
+
